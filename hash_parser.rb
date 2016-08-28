@@ -7,15 +7,15 @@ str = File.read(ARGV[0])
 my_hash = {}
 
 str.each_line do |line|
-	first, second = line.split(':')
-	first.strip!
-	second.strip!
+  first, second = line.split(':')
+  first.strip!
+  second.strip!
  
-	if my_hash[first]
-		my_hash[first] << second
-   	else
-     	   my_hash[first] = [second]
-	end
+  if my_hash[first]
+    my_hash[first] << second
+  else
+    my_hash[first] = [second]
+  end
 end
 
 puts my_hash
