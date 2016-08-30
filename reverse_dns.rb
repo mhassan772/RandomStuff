@@ -1,3 +1,4 @@
+#Created by Mohamed Hassan | @mhassan772
 #!/usr/bin/env ruby
 require 'net/dns'																				#To install this gem: gem install net-dns
 require 'ipaddr'
