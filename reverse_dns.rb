@@ -1,6 +1,6 @@
 #Created by Mohamed Hassan | @mhassan772
 #!/usr/bin/env ruby
-require 'net/dns'																				#To install this gem: gem install net-dns
+require 'net/dns'                                     #To install this gem: gem install net-dns
 require 'ipaddr'
 
 #The usage function
@@ -37,16 +37,16 @@ end
 my_hash = {}
 i = 0
 
-threads = ip_address.map do |ip|											#Taking the input IP by IP..
+threads = ip_address.map do |ip|                      #Taking the input IP by IP..
   Thread.new do
     i++
     if i % 15 == 0
-      sleep(rand(0.5))																#The sleep here not to overwhelm the network
+      sleep(rand(0.5))                                #The sleep here not to overwhelm the network
     end
-    query = resolver.query(ip.to_s, Net::DNS::PTR)		#The query
+    query = resolver.query(ip.to_s, Net::DNS::PTR)    #The query
     query.to_s.each_line do |line|
       if line.include? "PTR" and not line.include? ";;"		
-        name = line.split(" ")[4]											#Parse the query to get the address only
+        name = line.split(" ")[4]                     #Parse the query to get the address only
         if my_hash[ip.to_s]
           my_hash[ip.to_s] << name
         else
