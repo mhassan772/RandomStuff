@@ -1,5 +1,6 @@
 #Created by Mohamed Hassan | @mhassan772
 #!/usr/bin/env ruby
+#Some of this code is taken from rubyfu, by @KINGSABRI
 require 'net/dns'                                     #To install this gem: gem install net-dns
 require 'ipaddr'
 
