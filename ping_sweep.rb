@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 #Some code is taken from rubyfu.net by @KINGSABRI
+#you need net-ping gem, you can add it by: gem install net-ping
 require 'net/ping'
 require 'ipaddr'
 
