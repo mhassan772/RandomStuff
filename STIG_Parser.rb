@@ -2,6 +2,7 @@
 
 #created by mhassan772
 #This parser will get you the title and how to check the finding. You may uncomment the fix part to get the fix too.
+#You wil need to install nokogiri gem | sudo gem install nokogiri
 
 #file_location = ARGV[0]
 
