@@ -1,7 +1,7 @@
 require 'open-uri'
 
 #CHANGE this based on your cookie
-$cookie = "WC=9353216-25483-QDxrXt5Y57wyB6ld"
+$cookie = "WC=randomcharsandstuff"
 
 
 #Some general variables
